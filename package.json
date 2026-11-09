@@ -1,0 +1,25 @@
+{
+  "name": "agent-wallet",
+  "private": true,
+  "packageManager": "pnpm@10.34.9",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "fmt": "turbo run fmt",
+    "dev:agent": "pnpm --filter @agent-wallet/agent dev",
+    "dev:web": "pnpm --filter @agent-wallet/web dev",
+    "contracts:evm:build": "pnpm --filter @agent-wallet/contracts-evm build",
+    "contracts:evm:test": "pnpm --filter @agent-wallet/contracts-evm test",
+    "contracts:solana:build": "pnpm --filter @agent-wallet/contracts-solana build",
+    "contracts:solana:test": "pnpm --filter @agent-wallet/contracts-solana test"
+  },
+  "devDependencies": {
+    "turbo": "^2.6.1",
+    "typescript": "^5.9.3"
+  }
+}

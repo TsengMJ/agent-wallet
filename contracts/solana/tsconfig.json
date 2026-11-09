@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["mocha", "chai"],
+    "typeRoots": ["../../node_modules/@types"],
+    "lib": ["ES2022"],
+    "noEmit": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
+  },
+  "include": ["tests"]
+}

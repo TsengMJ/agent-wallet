@@ -1,0 +1,42 @@
+# Dependencies
+node_modules
+.pnpm-store
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# OS / IDE
+.DS_Store
+.idea
+.vscode/*
+!.vscode/extensions.json
+*.swp
+
+# Logs / coverage
+*.log
+coverage
+lcov.info
+
+# Turbo / TS
+.turbo
+dist
+*.tsbuildinfo
+
+# Foundry (EVM)
+contracts/evm/out
+contracts/evm/cache
+contracts/evm/broadcast
+contracts/evm/dependencies
+
+# Anchor / Solana
+contracts/solana/target
+contracts/solana/.anchor
+contracts/solana/test-ledger
+contracts/solana/migrations
+
+# Keys — never commit
+**/id.json
+**/*.json.key
+**/target/deploy/*.json

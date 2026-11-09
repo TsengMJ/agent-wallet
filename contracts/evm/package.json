@@ -1,0 +1,11 @@
+{
+  "name": "@agent-wallet/contracts-evm",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "bash ./scripts/forge.sh build",
+    "test": "bash ./scripts/forge.sh test",
+    "fmt": "bash ./scripts/forge.sh fmt",
+    "lint": "bash ./scripts/forge.sh fmt --check"
+  }
+}
